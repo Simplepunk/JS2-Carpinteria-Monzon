@@ -19,7 +19,7 @@ function renderizarProductos() {
         <p>Producto: ${prod.nombre}</p>
         <p>Precio $ ${prod.precio}</p>
         <p>Precio U$ ${(prod.precio/dolarVenta).toFixed(1)}</p>
-        <button class="btn btn-danger" id='btn${prod.id}'>COMPRAR</button>
+        <button class="btn btn-danger" id='btn${prod.id}'>Agregar Al Carrito</button>
     </li>`);
     }
     //EVENTOS
@@ -89,7 +89,7 @@ function eliminar(id){
 
 //GETJSON de productos.json
 async function obtenerJSON() {
-    const URLJSON="productos.json"
+    const URLJSON="./productos.json"
     const resp=await fetch(URLJSON)
     const data= await resp.json()
     productosJSON = data;
@@ -115,7 +115,7 @@ finalizar.onclick=()=>{
     Swal.fire({
         title: 'Pedido confirmado!',
         text: 'Estamos preparando todo para el envío.',
-        imageUrl: '/imgs/compra.png',
+        imageUrl: './imgs/compra.png',
         imageWidth: 204,
         imageHeight: 60,
         imageAlt: 'ok',
