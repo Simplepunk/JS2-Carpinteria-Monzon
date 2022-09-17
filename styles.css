@@ -12,7 +12,7 @@ table{
     background-color: #F6EFE7;
 }
 
-.formulario {
+.contactForm {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
