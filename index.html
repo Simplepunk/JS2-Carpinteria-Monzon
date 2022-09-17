@@ -20,25 +20,66 @@
                     <!-- Navbar -->
     <header>
         
-            <div class="container-fluid">
-                <a href="index.html"><img class="logo" src="./imgs/carpinteria.png" alt="logo"></a>
-                <nav class="navbar nav justify-content-center">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="container-fluid">
+            <a href="index.html"><img class="logo" src="./imgs/carpinteria.png" alt="logo"></a>
+            <nav class="navbar nav justify-content-center">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link expand" aria-current="page" href="index.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link expand" href="Contacto.html">Contacto</a>
+                </li>
+                </ul>
             </div>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link expand" aria-current="page" href="index.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link expand" href="Contacto.html">Contacto</a>
-                    </li>
-                    </ul>
+    </nav>
+</header>
+                            <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Carrito</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-        </nav>
-    </header>
+                <div class="modal-body">
+                    <div class="container">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="items"></tbody>
+                            <tfoot>
+                                <tr id="footer">
+                                <th scope="row" colspan="5">Carrito vacío - Agrege sus productos!</th>
+                                </tr>
+                            </tfoot>
+                            </table>
+                        <div class="row" id="cards"></div>
+                    </div>
+                    <div>
+                        <h4 id="gastoTotal">Total: $</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Terminar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div id="fila_prueba" class="row" style="background-color:#F6EFE7">
             <div class="col">
@@ -71,10 +112,9 @@
         </div>
             <br><br><br>
             <div>
-                <h4 id="gastoTotal">Total: $</h4>
-            </div>
-            <br><br><br>
-            <div>
+                <button id="toggleMyModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                    Ver carrito de compras <i class="bi bi-bag-check-fill"></i>
+                </button>
             <button id="finalizar" class="btn btn-success">Finalizar compra</button>
             </div>
     </div>
@@ -86,6 +126,11 @@
                     <div class="row ">
                         <div class="col-xl-8 col-md-4 col-sm-4 col-12   my-auto mx-auto a"><h3 class="mb-md-0 mb-5 bold-text">Monzón Carpinteria</h3></div>
                         <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                            <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                            <ul class="list-unstyled">
+                                <li><a href="index.html"> Productos</a></li>
+                                <li><a href="Contacto.html">Contacto</a></li>
+                            </ul>
                         </div>
                         <div class="col-xl-2 col-md-4 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text mt-sm-0 mt-5">
                             <b>Dirección</b></h6><p class="mb-1">Cordillera 2460</p><p>B° Cerro de las Rosas</p>
