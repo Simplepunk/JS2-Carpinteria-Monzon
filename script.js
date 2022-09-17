@@ -61,8 +61,8 @@ function agregarACarrito(productoNuevo) {
             let posicion = carrito.findIndex(p => p.id == productoNuevo.id);
             console.log(posicion);
             carrito[posicion].cantidad += 1;
-            
-            
+            //con querySelector falla
+            document.getElementById(productoNuevo.id).innerHTML=carrito[posicion].cantidad;
         }
     //siempre debo recalcular el total
     document.getElementById("gastoTotal").innerText=(`Total: $ ${calcularTotal()}`);
