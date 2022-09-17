@@ -60,7 +60,7 @@
                                 <th scope="col">Total</th>
                                 </tr>
                             </thead>
-                            <tbody id="items"></tbody>
+                            <tbody id="tablabody"></tbody>
                             <tfoot>
                                 <tr id="footer">
                                 <th scope="row" colspan="5">Carrito vacío - Agrege sus productos!</th>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary">Terminar compra</button>
+                <button id="finalizar" type="button" class="btn btn-primary">Finalizar compra</button>
                 </div>
             </div>
         </div>
@@ -87,35 +87,13 @@
             </div>
         </div>        
         <div>
-            <ul id=milista class="row list-group list-group-horizontal" style="background-color:#F6EFE7">
-                <!-- productos -->
+            <ul id=milista class="row list-group list-group-horizontal">
             </ul>
-        </div>
-        <div>
-            <br>
-            <h2>Carrito:</h2>
-            <br>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Cantidad</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Eliminar Producto</th>
-                    </tr>
-                </thead>
-                <tbody id="tablabody">
-                    <!-- tabla carrito -->
-                </tbody>
-            </table>
-        </div>
             <br><br><br>
             <div>
                 <button id="toggleMyModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                     Ver carrito de compras <i class="bi bi-bag-check-fill"></i>
                 </button>
-            <button id="finalizar" class="btn btn-success">Finalizar compra</button>
             </div>
     </div>
     <footer>

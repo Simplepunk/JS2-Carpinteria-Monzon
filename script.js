@@ -14,7 +14,7 @@ function renderizarProductos() {
     console.log(productosJSON)
     for (const prod of productosJSON) {
         lista.innerHTML+=(`<li class="col-sm-3 list-group-item">
-        <h3>ID: ${prod.id}</h3>
+        <h5>ID: ${prod.id}</h5>
         <img src="${prod.foto}" width="250px" height="450px">
         <p>Producto: ${prod.nombre}</p>
         <p>Precio $ ${prod.precio}</p>
