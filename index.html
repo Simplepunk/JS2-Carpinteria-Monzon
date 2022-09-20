@@ -42,7 +42,7 @@
             </div>
         </nav>
 </header>
-                            <!-- Modal -->
+                            <!-- Modal de carrito -->
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -60,19 +60,14 @@
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Cantidad</th>
                                 <th scope="col">Precio</th>
-                                <th scope="col">Total</th>
+                                <th scope="col">Eliminar</th>
                                 </tr>
                             </thead>
                             <tbody id="tablabody"></tbody>
-                            <tfoot>
-                                <tr id="footer">
-                                <th scope="row" colspan="5">Carrito vacío - Agrege sus productos!</th>
-                                </tr>
-                            </tfoot>
                             </table>
                     </div>
-                    <div>
-                        <h4 id="gastoTotal">Total: $</h4>
+                    <div><br><br><br>
+                        <h4 class="tot" id="gastoTotal">Total: $</h4>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -82,21 +77,24 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="produc">
         <div id="fila_prueba" class="row" style="background-color:#F6EFE7">
             <div class="col">
                 <h1 class="text-center">¡Nuestros Productos!</h1>
             </div>
         </div>        
         <div>
-            <ul id=milista class="row list-group list-group-horizontal">
-            </ul>
-            <br><br><br>
             <div>
+                <ul id=milista class="row list-group list-group-horizontal">
+                </ul>
+            </div>
+            <br><br><br>
+            <div class="btnshop">
                 <button id="toggleMyModal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
                     Ver carrito de compras <i class="bi bi-bag-check-fill"></i>
                 </button>
             </div>
+        </div>
     </div>
     <footer>
         <div class="body">

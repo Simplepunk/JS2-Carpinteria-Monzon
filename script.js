@@ -14,13 +14,15 @@ function renderizarProductos() {
     console.log(productosJSON)
     for (const prod of productosJSON) {
         lista.innerHTML+=(`<li class="col-sm-3 list-group-item">
+        <div class="card me-4 h-100 fadehover shadow p-3 bg-body rounded">
         <h5>ID: ${prod.id}</h5>
         <img src="${prod.foto}" width="250px" height="450px">
         <p>Producto: ${prod.nombre}</p>
         <p>Precio $ ${prod.precio}</p>
         <p>Precio U$ ${(prod.precio/dolarVenta).toFixed(1)}</p>
         <button class="btn btn-danger" id='btn${prod.id}'>Agregar Al Carrito</button>
-    </li>`);
+    </li>
+    </div>`);
     }
     //EVENTOS
     productosJSON.forEach(prod=> {
